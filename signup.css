@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+::selection {
+    background-color: lightblue;
+    color: black;
+}
+
+body {
+    background-color: #e7eeda; 
+    color: #5b3d34; 
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Custom styles for the navigation bar */
+.navbar-top {
+    background-color: #E8F8E9; /* Pastel green */
+    color: #D9534F; /* Pastel red */
+}
+.navbar-top .navbar-brand {
+    color: #D9534F; /* Pastel red */
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.navbar-top .navbar-brand img {
+    margin-right: 10px;
+}
+.navbar-bottom {
+    background-color: #FFE5E5; /* Pastel red */
+}
+.navbar-bottom .nav-link {
+    color: #28A745; /* Pastel green */
+    font-weight: bold;
+}
+.navbar-bottom .nav-link:hover {
+    color: #155724; /* Darker green */
+}
+
+.navbar-brand {
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 40px;
+}
+
+.navbar-bottom .navbar-nav {
+    margin: 0 auto;
+}
+
+.nav-item img {
+    padding-right: 5px;
+}
+
+.signup-container {
+    background-color: #f0f5e8;
+    border: 1px solid #d4d8c5;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.form-control {
+    background-color: #e6ebde;
+    border: 1px solid #a0b59e;
+    color: #5b3d34;
+}
+
+.btn-custom {
+    background-color: #748c74; 
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-custom:hover {
+    background-color: #5d755d;
+}
+
+.forgot-link, .signup-link {
+    font-size: 0.9rem;
+    color: #748c74;
+    text-decoration: none;
+}
+
+.signup-link {
+    font-weight: bold;
+    color: #8b6a62;
+}
+
+.forgot-link:hover, .signup-link:hover {
+    text-decoration: underline;
+}

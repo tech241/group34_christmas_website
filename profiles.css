@@ -1,92 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+::selection {
+    background-color: lightblue;
+    color: black;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-.card-container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    margin-top: 25px;
+body {
+    background-color: #d6c9a7; /* Soft beige background */
 }
 
-.slide-content {
-    margin: 0 40px;
+/* Custom styles for the navigation bar */
+.navbar-top {
+    background-color: #E8F8E9; /* Pastel green */
+    color: #D9534F; /* Pastel red */
 }
+.navbar-top .navbar-brand {
+    color: #D9534F; /* Pastel red */
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.navbar-top .navbar-brand img {
+    margin-right: 10px;
+}
+.navbar-bottom {
+    background-color: #FFE5E5; /* Pastel red */
+}
+.navbar-bottom .nav-link {
+    color: #28A745; /* Pastel green */
+    font-weight: bold;
+}
+.navbar-bottom .nav-link:hover {
+    color: #155724; /* Darker green */
+}
+
+.navbar-brand {
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 40px;
+}
+
+.navbar-bottom .navbar-nav {
+    margin: 0 auto;
+}
+
+.nav-item img {
+    padding-right: 5px;
+}
+
 
 .card {
-    width: 300px;
-    border-radius: 25px;
-    background-color: #FFF;
-    border: #4070F4 solid 1px;
+    background-color: #e7d4c6; /* Pastel background */
+    border: 2px solid #a7b59b;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 15px;
 }
 
-.card-image {
-    position: relative;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background: #FFF;
-    padding: 3px;
+.card:hover {
+    transform: translateY(-10px);
 }
-.card-image .card-img {
-    height: 100%;
-    width: 100%;
+
+.card-img-top {
+    width: 120px;
+    height: 120px;
     object-fit: cover;
-    border: 4px solid #f44040;
+    border: 3px solid #749079; /* Green border */
     border-radius: 50%;
-}
-
-.image-content, .card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 14px;
-}
-
-.image-content {
-    row-gap: 5px;
-    position: relative;
-
-}
-
-.overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #4070F4;
-    border-radius: 25px 25px 0 0; 
-}
-
-
-
-.overlay::after {
-    border-radius: 0 25p 0 0;
-    background-color: #265DF2;
-}
-
-.name {
-    font-size: 18px;
-    font-weight: 500;
-    color: #333;
+    margin: 0 auto;
 }
 
 .button {
-    border: none;
-    font-size: 16px;
+    background-color: #e29688;
     color: white;
-    background-color: rgb(0, 132, 255);
-    margin: 14px;
-    border-radius: 6px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .button:hover {
-    background-color: #265DF2;
+    background-color: #d6c9a7;
+    color: black;
 }
+
+/* Carousel Control Styling */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
+
+ /* Christmas Themed Styles */
+ .christmas-header {
+    background-color: #008C45; /* Christmas green */
+    color: #fff; /* White text */
+    border-bottom: 2px solid #D9534F; /* Red accent border */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.christmas-body {
+    background-color: #f1f7f4; /* Light snowy background */
+    color: #333;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.christmas-footer {
+    background-color: #D9534F; /* Christmas red */
+    color: #fff;
+    border-top: 2px solid #008C45; /* Green accent border */
+}
+
+.card-img-top {
+    border: 4px solid #D9534F; /* Red border for profile picture */
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.christmas-wishlist li {
+    background: url('https://www.transparenttextures.com/patterns/paper-1.png') repeat;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #008C45; /* Green text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.christmas-wishlist li:nth-child(odd) {
+    background-color: #f8f8f8; /* Lighter background for odd items */
+}
+
+.christmas-wishlist li:nth-child(even) {
+    background-color: #e1f7e1; /* Lighter green for even items */
+}
+
+.modal-footer button {
+    font-weight: bold;
+}
+
+/* Hover effect for buttons */
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #d9534f; /* Red button on hover */
+    color: white;
+}
+
+.modal-body p, .modal-body ul {
+    font-size: 1rem;
+}
+
+/* Add some festive snow effect */
+body {
+    background-image: url('https://www.transparenttextures.com/patterns/snow.png');
+    background-size: 10px 10px;
+}
+
+.modal-body {
+    background-image: url('https://example.com/snowfall.gif');
+    background-size: cover;
+}
+
+.modal-title {
+    font-family: 'Georgia', serif;
+}
+
+h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+ /* Snowflakes container */
+ .snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Snowflakes styles */
+.snowflake {
+    position: absolute;
+    top: -10px;
+    font-size: 1.5rem;
+    color: white;
+    user-select: none;
+    animation: fall 10s linear infinite;
+}
+
+/* Create different snowflake sizes */
+.snowflake:nth-child(odd) {
+    font-size: 1rem;
+    animation-duration: 12s;
+}
+
+.snowflake:nth-child(even) {
+    font-size: 2rem;
+    animation-duration: 8s;
+}
+
+/* Snowflakes falling animation */
+@keyframes fall {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    100% {
+        transform: translateX(calc(100vw * 0.5 - 50%)) translateY(100vh);
+    }
+}
+
+/* Snowflakes container */
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Snowflakes styles */
+.snowflake {
+    position: absolute;
+    font-size: 1.5rem;
+    color: white;
+    user-select: none;
+    animation: fall linear infinite;
+}
+
+/* Falling animation */
+/* Falling animation (straight downwards) */
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh); /* Move the snowflakes to the bottom of the viewport */
+    }
+}
+/* Snowflakes container */
+.snow-pile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;  /* Allow interaction with elements behind the snowflakes */
+    z-index: -1; /* Make sure snowflakes are behind everything else */
+}
+
+/* Snowflake styles */
+.snowflake {
+    position: absolute;
+    font-size: 1rem;
+    color: white;
+    animation: fall linear infinite;
+}
+
+/* Falling animation */
+@keyframes fall {
+    0% {
+        transform: translateY(0); /* Snowflakes fall right from the top of the screen. */
+    }
+    100% {
+        transform: translateY(100vh); /* Move snowflakes down */
+    }
+}
+
+
+
+
+

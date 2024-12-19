@@ -2,12 +2,14 @@
 
 
 ::selection {
-  background: rgb(255, 182, 182);
+  background-color: lightblue;
+  color: black;
 }
 /* :: selection was used to change the colour of the highlight instead of default blue when text is selected. */
 
 * {
-  margin: 10px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -25,25 +27,52 @@
   margin-top: 50px;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #d3cfcf;
-  padding: 10px 20px;
+/* Custom styles for the navigation bar */
+.navbar-top {
+  background-color: #E8F8E9; /* Pastel green */
+  color: #D9534F; /* Pastel red */
 }
-
-#logo_title_container {
+.navbar-top .navbar-brand {
+  color: #D9534F; /* Pastel red */
+  font-weight: 300;
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.navbar-top .navbar-brand img {
+  margin-right: 10px;
+}
+.navbar-bottom {
+  background-color: #FFE5E5; /* Pastel red */
+}
+.navbar-bottom .nav-link {
+  color: #28A745; /* Pastel green */
+  font-weight: bold;
+}
+.navbar-bottom .nav-link:hover {
+  color: #155724; /* Darker green */
 }
 
 .navbar-brand {
-  padding-left: 10px;
-  text-decoration: none;
-  color: black;
+  font-family: 'Great Vibes', sans-serif;
+  font-size: 40px;
 }
 
+.navbar-bottom .navbar-nav {
+  margin: 0 auto;
+}
+
+.nav-item img {
+  padding-right: 5px;
+}
+
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space out the logo/title and "Login" */
+}
 
 
 .goToProfiles .card-header {

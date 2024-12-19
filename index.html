@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merry Hearts &#10084;</title>
     <link rel="stylesheet" href="./styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Reddit+Mono&amp;display=swap" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
     </style>
@@ -14,23 +17,40 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid" id="logo_title_container">
-            <div class="logo">
-                <img src="./hearts-removebg-preview.png" alt="logo" height="50px" width="50px">
-            </div>
-            <div class="navbar-brand">
-                <a class="navbar-brand" href="#">Merry Hearts</a>
-            </div>
+     <!-- Top Navigation Bar -->
+     <nav class="navbar navbar-expand-lg navbar-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./merry_hearts_logo.png" alt="Merry Hearts Logo" width="50" height="50" class="d-inline-block align-text-top">
+                Merry Hearts
+            </a>
         </div>
-        <ul class="nav-item">
-            <li class="nav"><a href="login.html" target="_self"></a>Login</li>
-        </ul>
     </nav>
 
-    <!-- <div class="container-fluid">
-        <title id="title01">Merry Christmas!</title>
-    </div> -->
+    <!-- Bottom Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-bottom">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html" target="_self"><img src="./home.png" alt="logo" height="25" width="auto">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="./user.png" alt="logo" height="25" width="auto">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./profiles.html" target="_self"><img src="./team.png" alt="logo" height="25" width="auto">Our Children</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./signup.html" target="_self"><img src="./user-profile.png" alt="logo" height="25" width="auto">Sign-in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Christmas Countdown -->
     <div class="countdown-container container">
@@ -60,31 +80,33 @@
     <section class="christmas-banner">
         <img src="Christmas-Gifts-banner.jpg" alt="Christmas Gifts Banner">
         <div class="banner-text">
-          <h1>Make a Child's Christmas Special</h1>
-          <p>
-            Many orphanages struggle to provide personalized gifts for children during Christmas. <br>
-            With <strong>Merry Hearts</strong>, you can make a difference! Caregivers provide a description of each child, and you will be randomly assigned a child through our platform. <br>
-            Use these descriptions to buy gifts that truly bring joy to the hearts of these children.
-          </p>
+            <h1>Make a Child's Christmas Special</h1>
+            <p>
+                Many orphanages struggle to provide personalized gifts for children during Christmas. <br>
+                With <strong>Merry Hearts</strong>, you can make a difference! Caregivers provide a description of each
+                child, and you will be randomly assigned a child through our platform. <br>
+                Use these descriptions to buy gifts that truly bring joy to the hearts of these children.
+            </p>
         </div>
-      </section>
-      
+    </section>
+
 
     <section class="goToProfiles container-fluid">
         <div class="card text-center">
             <div class="card-header">
-              Buy Presents Now
+                Buy Presents Now
             </div>
             <div class="card-body">
                 <div class="image">
                     <img src="./christmas orphanage img.jpg" alt="orphanage christmas">
                 </div>
-              <div class="text"><h5 class="card-title">View the childrens' profiles here!</h5>
-                <p class="card-text">Customise gifts with personalised letters and bring some Christmas joy.</p>
+                <div class="text">
+                    <h5 class="card-title">View the childrens' profiles here!</h5>
+                    <p class="card-text">Customise gifts with personalised letters and bring some Christmas joy.</p>
+                </div>
+                <a href="./profiles.html" class="btn btn-primary">View</a>
             </div>
-              <a href="./profiles.html" class="btn btn-primary">View</a>
-            </div>
-          </div>
+        </div>
     </section>
 
 
