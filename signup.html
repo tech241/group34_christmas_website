@@ -6,17 +6,19 @@
     <title>Sign In Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./signup.css">
+    <script src="signup.js" defer></script>
 </head>
 <body>
     <!-- Top Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-top">
-        <div class="container">
+        <div class="container justify-content-center">
             <a class="navbar-brand" href="./index.html">
                 <img src="./merry_hearts_logo.png" alt="Merry Hearts Logo" width="50" height="50" class="d-inline-block align-text-top">
                 Merry Hearts
             </a>
         </div>
     </nav>
+    
 
     <!-- Bottom Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-bottom">
@@ -25,43 +27,77 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html" target="_self"><img src="./home.png" alt="logo" height="25" width="auto">Home</a>
+                        <a class="nav-link" href="./index.html" target="_self"><img src="./home.png" alt="logo" height="25" width="auto"> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="./user.png" alt="logo" height="25" width="auto">About Us</a>
+                        <a class="nav-link" href="./profiles.html" target="_self"><img src="./team.png" alt="logo" height="25" width="auto"> Our Children</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./profiles.html" target="_self"><img src="./team.png" alt="logo" height="25" width="auto">Our Children</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./signup.html" target="_self"><img src="./user-profile.png" alt="logo" height="25" width="auto">Sign-in</a>
+                        <a class="nav-link" href="./signup.html" target="_self"><img src="./user-profile.png" alt="logo" height="25" width="auto"> Sign-in</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container signup-container">
-        <h1 class="text-center mb-4 fw-bold">Sign In</h1>
-        <form>
-            <div class="mb-3">
-                <input type="text" class="form-control" placeholder="username" id="username">
-            </div>
-            <div class="mb-3">
-                <input type="password" class="form-control" placeholder="password" id="password">
-            </div>
-            <div class="d-grid">
-                <button type="submit" class="btn btn-custom">SIGN IN</button>
-            </div>
-            <div class="mt-3">
-                <a href="#" class="forgot-link">forgot password</a>
-            </div>
-            <p class="text-center mt-3">
-                New to MerryHearts? <a href="#" class="signup-link">Sign Up</a>
-            </p>
-        </form>
+
+    <!-- Spacing Below Navbar -->
+    <div class="mt-4"></div>
+
+    <div class="santa-sleigh">
+        <img src="./santa sleigh.png" alt="Santa's Sleigh">
     </div>
+
+    <!-- Content -->
+    <div class="container d-flex align-items-center justify-content-center" style="min-height: 80vh;">
+        <div class="row w-100">
+            <!-- Progress Bar Section -->
+            <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+                <h2 class="text-center mb-3 fw-bold">75% Goal Achieved!</h2>
+                <div class="progress w-75" style="height: 30px;">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        75% of children received gifts!
+                    </div>
+                </div>
+                <p class="text-center mt-3">Help us reach 100% by signing in and making a child smile this Christmas!</p>
+            </div>
+
+            <!-- Sign-In Form Section -->
+            <div class="col-lg-6">
+                <h1 class="text-center mb-4 fw-bold">Sign In</h1>
+                <form id="signInForm">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Username" id="username">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" placeholder="Password" id="password">
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-custom">SIGN IN</button>
+                    </div>
+                    <div class="mt-3">
+                        <a href="#" class="forgot-link">Forgot password</a>
+                    </div>
+                    <p class="text-center mt-3">
+                        New to Merry Hearts? <a href="#" class="signup-link" id="signUpLink">Sign Up</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Orphanage Name | All Rights Reserved</p>
+            <p><a href="mailto:contact@orphanage.com">contact@orphanage.com</a> | Phone: 123-456-7890</p>
+            <div>
+                <a href="https://www.facebook.com" class="text-white mx-2">Facebook</a>
+                <a href="https://www.instagram.com" class="text-white mx-2">Instagram</a>
+            </div>
+            <p class="mt-3">Wishing you a Merry Christmas and a Happy New Year!</p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

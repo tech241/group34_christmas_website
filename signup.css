@@ -3,20 +3,22 @@
 ::selection {
     background-color: lightblue;
     color: black;
-}
+  }
 
 body {
-    background-color: #e7eeda; 
-    color: #5b3d34; 
-    font-family: Arial, sans-serif;
-    height: 100vh;
+    background-color: #f4f7ed;
+    color: #5b3d34;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Custom styles for the navigation bar */
 .navbar-top {
-    background-color: #E8F8E9; /* Pastel green */
-    color: #D9534F; /* Pastel red */
+    background-color: #B7F2C6; /* Pastel green */
+    color: #F7B7B7; /* Pastel red */
 }
 .navbar-top .navbar-brand {
     color: #D9534F; /* Pastel red */
@@ -53,20 +55,17 @@ body {
     padding-right: 5px;
 }
 
-.signup-container {
+/* Form Container */
+.container.signup-container {
     background-color: #f0f5e8;
     border: 1px solid #d4d8c5;
-    border-radius: 5px;
-    padding: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: auto;
-    margin-bottom: auto;
-
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+    flex-grow: 1;
+    margin-bottom: 10px;
 }
 
 .form-control {
@@ -76,11 +75,10 @@ body {
 }
 
 .btn-custom {
-    background-color: #748c74; 
+    background-color: #748c74;
     color: #fff;
     font-weight: bold;
 }
-
 .btn-custom:hover {
     background-color: #5d755d;
 }
@@ -90,12 +88,98 @@ body {
     color: #748c74;
     text-decoration: none;
 }
-
 .signup-link {
     font-weight: bold;
     color: #8b6a62;
 }
-
 .forgot-link:hover, .signup-link:hover {
     text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #5b3d34;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Spacing Below Navbar */
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+/* Progress Bar */
+.progress {
+    background-color: #e6ebde;
+    border: 1px solid #a0b59e;
+    border-radius: 15px;
+}
+.progress-bar {
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+}
+
+/* Form Container */
+.container.signup-container {
+    background-color: #f0f5e8;
+    border: 1px solid #d4d8c5;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+    flex-grow: 1;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+.santa-sleigh {
+    position: absolute;
+    top: 20%; /* Starting height */
+    left: -150px; /* Start from the left side of the screen */
+    width: 100px;
+    height: 60px;
+    background-image: url('https://example.com/santa-sleigh.png'); /* Your sleigh image */
+    background-size: cover;
+    animation: flyUpAndDown 10s linear infinite;
+    z-index: -1; /* Make the sleigh go behind the content */
+}
+
+/* Keyframes to move the sleigh in a wave-like up-and-down motion */
+@keyframes flyUpAndDown {
+    0% {
+        left: -150px; /* Start position */
+        top: 20%; /* Start height */
+    }
+    25% {
+        left: 25%; /* Move right */
+        top: 10%; /* Move up slightly */
+    }
+    50% {
+        left: 50%; /* Move right */
+        top: 20%; /* Return to the middle */
+    }
+    75% {
+        left: 75%; /* Move right */
+        top: 30%; /* Move down slightly */
+    }
+    100% {
+        left: 100%; /* Move all the way to the right */
+        top: 20%; /* Return to the middle height */
+    }
+}
+
+/* Adjust sign-in or other elements with a higher z-index */
+.sign-in-form {
+    position: relative;
+    z-index: 1; /* Ensure the sign-in form stays in front of the sleigh */
 }
